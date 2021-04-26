@@ -2,8 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import 'loggedInScreen.dart';
+import 'package:portfolio/screens/SelectOperation/SelectOperation.dart';
 
 final FirebaseAuth _auth = FirebaseAuth.instance;
 final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -259,7 +258,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                                     MaterialPageRoute(
                                                       builder: (BuildContext
                                                               context) =>
-                                                          LoggedInScreen(),
+                                                          SelectOperation(),
                                                     ),
                                                     (route) => false,
                                                   )
@@ -387,7 +386,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (BuildContext context) =>
-                                      LoggedInScreen(),
+                                      SelectOperation(),
                                 ),
                                 (route) => false,
                               );

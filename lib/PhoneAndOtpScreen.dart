@@ -6,9 +6,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:portfolio/screens/SelectOperation/SelectOperation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import 'loggedInScreen.dart';
 
 final FirebaseAuth _auth = FirebaseAuth.instance;
 final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -342,7 +341,7 @@ class _PhoneAndOtpScreenState extends State<PhoneAndOtpScreen> {
                                                         MaterialPageRoute(
                                                           builder: (BuildContext
                                                                   context) =>
-                                                              LoggedInScreen(),
+                                                              SelectOperation(),
                                                         ),
                                                         (route) => false,
                                                       )
@@ -668,7 +667,7 @@ class _PhoneAndOtpScreenState extends State<PhoneAndOtpScreen> {
                             context,
                             MaterialPageRoute(
                               builder: (BuildContext context) =>
-                                  LoggedInScreen(),
+                                  SelectOperation(),
                             ),
                             (route) => false,
                           )
@@ -723,7 +722,7 @@ class _PhoneAndOtpScreenState extends State<PhoneAndOtpScreen> {
       print("OTP verified");
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => LoggedInScreen()),
+        MaterialPageRoute(builder: (context) => SelectOperation()),
       );
     } else {
       print("invalid OTP");
