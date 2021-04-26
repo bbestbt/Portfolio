@@ -625,7 +625,7 @@ class _PhoneAndOtpScreenState extends State<PhoneAndOtpScreen> {
       isLoading = true;
     });
 
-    var phoneNumber = '+27 ' + numberController.text.trim();
+    var phoneNumber = '+66 ' + numberController.text.trim();
 
     //first we will check if a user with this cell number exists
     var isValidUser = false;
