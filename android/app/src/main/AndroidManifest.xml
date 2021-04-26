@@ -1,6 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.portfolio">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
    <application
+
+
         android:label="portfolio"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -39,7 +45,5 @@
             android:value="2" />
 
         <!-- Required to fetch data from the internet. -->
-        <uses-permission android:name="android.permission.INTERNET" />
-
     </application>
 </manifest>
