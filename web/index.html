@@ -30,6 +30,35 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+  <script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyApLsPttedocsG8inRoeCQxBYNfLASymlg",
+    authDomain: "dc-portfolio-project.firebaseapp.com",
+    databaseURL: "https://dc-portfolio-project-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "dc-portfolio-project",
+    storageBucket: "dc-portfolio-project.appspot.com",
+    messagingSenderId: "858973511105",
+    appId: "1:858973511105:web:0c79780bd2be23254de340",
+    measurementId: "G-FH2P6JZR25"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
